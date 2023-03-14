@@ -3,10 +3,10 @@ const usernameInput = document.querySelector('#username');
 const favouritePainting = document.querySelector('#favourite');
 const paintingsList = document.querySelector('#userPaintings');
 
-muesumForm.addEventListener('submit', onSubmit);
+muesumForm.addEventListener('submit', render);
 
-function onSubmit(e){
-e.preventDefault();
+function render(e){
+    e.preventDefault();
     if(usernameInput.value == '' || favouritePainting.value == ''){
         alert('Please Enter the missing fields');
     }
@@ -19,6 +19,7 @@ e.preventDefault();
         favouritePainting.value = '';
     }
 }
+
 
 function changeColor(){
     var color = prompt("What color would you like to change the paragraph to?")

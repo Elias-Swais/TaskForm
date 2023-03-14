@@ -30,11 +30,55 @@
     label{
         color:white;
     }
-    h1{
+    h4{
         color:white;
+    }
+    #form1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background:$PageBackground;
+        height: 320px;
+        width: 100%;
+        border-radius: 6px;
+        padding: 0 0.75rem;
+        gap: 0.75rem;
+        box-shadow: 5px 4px 8px 2px rgb(0 0 0 / 10%);
+        input,
+        label {
+        width: 95%;
+        }
+        input {
+        padding: 0.7rem 0.5rem;
+        outline: none;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        }
+        input:focus {
+        border: 1px solid black;
+        transition: 0.3s ease-in-out;
+        }
+        .btn{
+            padding: 0.5rem 0.7rem;
+            margin-top: 10px;
+            border: 1px solid black;
+            outline: none;
+            border-radius: 0.35rem;
+            cursor: pointer;
+            background-color: #fff;
+            position: relative;
+            width: 100px;
+            transition: all 0.5s ease-in-out;
+            &:hover{
+                background: $HyperLinkColors;
+                color: #000;
+            }
+        }
     }
 }
 
 #userPaintings{
-    color:white;
+    color:black;
 }
+

@@ -22,6 +22,7 @@
         </div>
             <ul>
                 <li><a href ="Index.html">Home</a></li>
+                <li><a href="FormPage.html">Paintings</a></li>
                 <li><a href ="#">Gallery</a></li>
                 <li><a href ="#">Department</a></li>
                 <li><a href="#">About Us</a></li>
@@ -39,18 +40,19 @@
     <div class = "background">
         <div class = "middle">
                 <form id = "form1">
-                    <h1>Add a favourite painting</h1>
-                    <div>
+                    <h4>Add a favourite painting</h4>
+                    <div class ="formElements">
                         <label for="username">Name:</label>
                         <input type="text" id ="username">
                     </div>
-                    <div>
+                    <div class ="formElements">
                     <label for="favPainting">Favourite Painting</label>
                     <input type="text" id="favourite">
                     </div>
                     <input class ="btn" type="submit" value="Submit">
+                    <ul id = "userPaintings"></ul>
                 </form>
-                <ul id = "userPaintings"></ul>
+                
         </div>
     </div>
     </header>

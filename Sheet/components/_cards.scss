@@ -1,0 +1,76 @@
+@mixin imgs(){
+position:relative;
+width: 100%;
+}
+
+
+.imageGallery{
+    background: $PageBackground;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+        img{
+            width: 100%;
+            height: 400px;
+            object-fit: contain;
+            margin-top: 100px;
+        }
+}
+
+@include mobile{
+    .imageGallery{
+        flex-direction: column;
+    }
+}
+
+.FirstImage{
+   @include imgs();
+   &:hover .overlay{
+    height: 100%;
+}
+}
+
+.SecondImage{
+   @include imgs();
+   &:hover .overlay{
+    height: 100%;
+}
+}
+
+.ThirdImage{
+    @include imgs();
+    &:hover .overlay{
+        height: 100%;
+    }
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.75);
+    overflow: hidden;
+    width: 100%;
+    transition: .5s ease;
+    height: 0;
+    h1{
+        width: 100%;
+        margin-top: 30%;
+        color: whitesmoke;
+        font-size: 4vw;
+        position: absolute;
+        text-align: center;
+        transform: rotate(-5deg)skewX(-5dg);
+    }
+    h2{
+        text-align: center;
+        color: whitesmoke;
+        font-size: 1.2vw;
+        margin: 60% 0 0 18%;
+        letter-spacing: 5px;
+        width: 70%;
+        line-height: 1.5em;
+    }
+}
+

@@ -1,0 +1,38 @@
+.foot{
+    width: 100%;
+    color: $HyperLinkColors;
+    display: block;
+    text-align: center;
+}
+
+.footer-content{
+    background: $PageBackground;
+    display:flex;
+    justify-content: space-around;
+    align-content: center;
+    height: 100px;
+    h3{
+        font-weight: 300;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+    }
+    a{
+        margin-top: 40px;
+        text-decoration: none;
+        color: #F1B420;
+        margin-bottom: 10px;
+        font-weight: bold;
+     
+        
+        &:hover{
+            color:$HyperLinkColors--hover;
+        }
+    }
+}
+
+.seperator{
+    height: 60px;
+    background-color: #F1B420;
+    width: 100%;
+}
+    

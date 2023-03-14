@@ -1,0 +1,40 @@
+.background{
+    background-image: url('../ancient.jpg');
+    background-repeat: no-repeat;
+    max-width: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: 20px;
+    
+}
+.middle{
+    text-align: center;
+    border-style: 2px solid;
+    border-radius: 100px;
+    border-color: white;
+    max-width: 70%;
+    
+    p{
+        color: $ParagraphColors;
+
+    }
+    h2{
+        color: $ParagraphColors;
+        font-weight: bolder;
+    }
+    label{
+        color:white;
+    }
+    h1{
+        color:white;
+    }
+}
+
+#userPaintings{
+    color:white;
+}
